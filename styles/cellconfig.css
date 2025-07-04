@@ -1,0 +1,9 @@
+@media (max-width: 769px) {
+#hello{
+    display: none;
+}
+
+#searchbar{
+    width:300px;
+}
+}

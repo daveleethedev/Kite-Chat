@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Menbere:wght@100..700&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;      
+}
+
+*{
+    font-family: "Menbere", sans-serif;
+}
+
+
+
+#leftBar{
+width: 80px;
+float: left;
+height: 760px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-width: 0px 3px 0px 0px;
+border-color: rgba(0, 0, 0, 0.282);
+border-style: inset;
+
+
+}
+
+.option{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(233, 246, 255);
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option:hover{
+    background-color: rgb(225, 235, 241);
+    cursor: pointer;
+}
+
+#mainNav{
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+}
+
+#hello{
+ background-color:   aliceblue;
+ margin-right: 10px;
+}
+
+#searchbar{
+    width: 500px;
+    height: 50px;
+    background-color: rgba(141, 255, 255, 0.496);
+    border-radius: 20px ;
+    border-color: brown;
+    display: flex;
+    justify-content: center;
+}
+
+#searchbar::placeholder{
+    text-align: center;
+}
+
