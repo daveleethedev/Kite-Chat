@@ -2,8 +2,21 @@
 #hello{
     display: none;
 }
+#notify{
+    display: none;
+}
 
 #searchbar{
     width:300px;
+}
+
+#myChats{
+    background-color: aliceblue;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 }
