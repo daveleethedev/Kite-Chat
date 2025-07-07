@@ -17,7 +17,7 @@ body{
      background-color: rgb(255, 255, 255);
     width: 80px;
     float: left;
-    height: 760px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,52 +128,70 @@ main{
     border-color: aqua;
     border-width:  0px 3px 0px 0px;
     border-style: solid;
+
 }
 
 
 #communities{
-    
     padding: 10px;
-    width: 600px;
-    height: 3000px;
+    width: 400px;
+    height: 700px;
     padding-left: 0;
     display: flex;
     flex-direction: column;
-    
-    overflow-y: scroll;
+    overflow: scroll;
+
 }
 
 #communities::-webkit-scrollbar{
-    background-color:  #09199300;
+    background-color:  #ffffff00;
 }
 
-#community{
-    padding: 10px;
-    display:flex;
-    flex-direction: row;
-}
-
-
-#community-icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 40%;
-}
-
-#community-icon:hover{
-    width: 53px;
-    height: 53px;
-    cursor: pointer;
-
-}
+#community {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  width: 180px;
  
-#community-name{
-    margin-left: 10px;
-    margin-top: 0px;
-    background-color: rgb(12, 6, 63);
-    padding: 10px;
-    border-radius: 10px;
-    color: aliceblue;
-    display: none;
+}
+
+#community-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  transition: width 0.2s, height 0.2s;
+}
+
+#community-icon:hover {
+  width: 53px;
+  height: 53px;
+  cursor: pointer;
+}
+
+/* animação do texto */
+#community-name {
+  margin-left: 10px;
+  background-color: rgb(12, 6, 63);
+  padding: 10px;
+  border-radius: 10px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  
+  
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; /* evita que ele bloqueie o hover */
+}
+
+/* quando passar o mouse no container todo, mostra o texto */
+#community:hover #community-name {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
 }
 
