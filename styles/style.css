@@ -2,19 +2,19 @@
 
 body{
     background-image: linear-gradient(to right bottom, white, rgb(221, 221, 221), white);
-    width: 100vw;
-    height: 100vh;
+   
     margin: 0px;
-    padding: 0px;      
-    overflow: hidden;
+    padding: 0px;    
+    overflow-y: hidden;  
+    
 }
 
 *{
     font-family: "Poppins", sans-serif;
 }
 
-#leftBar{
-     background-color: rgb(255, 255, 255);
+#options{
+    background-color: rgb(255, 255, 255);
     width: 80px;
     float: left;
     height: 800px;
@@ -66,7 +66,6 @@ body{
 }
 
 #hello{
-   
     margin-left: 10px;
     display: flex;
     align-items: center;
@@ -121,42 +120,33 @@ body{
     border-radius: 50%;
 }
 
-main{
-    background-color: white;
-    width: 70px;
-    float: left;
-    border-color: aqua;
-    border-width:  0px 3px 0px 0px;
-    border-style: solid;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
 #communities{
+    background-color: white;
     padding: 10px;
-    width: 400px;
+    width: 65px;
     height: 700px;
     padding-left: 0;
     display: flex;
+    float: left;
     flex-direction: column;
     overflow: scroll;
-
+    border-color: aqua;
+    border-width:  0px 3px 0px 0px;
+    border-style: solid;
 }
 
 #communities::-webkit-scrollbar{
-    background-color:  #ffffff00;
+    background-color:  #d4000000;
 }
 
 #community {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  height: 40px;
-  width: 180px;
- 
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 40px;
+    width:40px;
 }
 
 #community-icon {
@@ -174,19 +164,19 @@ main{
 
 /* animação do texto */
 #community-name {
-  margin-left: 10px;
-  background-color: rgb(12, 6, 63);
-  padding: 10px;
-  border-radius: 10px;
-  color: aliceblue;
-  display: flex;
-  flex-direction: row;
-  
-  
-  opacity: 0;
-  transform: translateX(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none; /* evita que ele bloqueie o hover */
+    margin-left: 10px;
+    background-color: rgb(12, 6, 63);
+    padding: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    position: fixed;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* evita que ele bloqueie o hover */
 }
 
 /* quando passar o mouse no container todo, mostra o texto */
@@ -196,17 +186,3 @@ main{
   pointer-events: auto;
 }
 
-#posts{
-    display: flex;
-    justify-content: center;
-
-
-
-}
-
-.post{
-    width: 500px;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-   
-}

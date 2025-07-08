@@ -1,4 +1,6 @@
 @media (max-width: 769px) {
+
+
 #hello{
     display: none;
 }
@@ -19,14 +21,13 @@
     flex-direction: column;
     margin: auto;
 }
+
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-  .only-pc {
-    display: none;
+  #searchbar{
+    width: 600px;
   }
 
-  .only-tablet {
-    display: block;
-  }
+
 }
