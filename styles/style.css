@@ -2,11 +2,12 @@
 
 body{
     background-image: linear-gradient(to right bottom, white, rgb(221, 221, 221), white);
-   
+    
     margin: 0px;
     padding: 0px;    
     overflow-y: hidden;  
-    
+    width: 100vw;
+    height: 100vh;
 }
 
 *{
@@ -17,7 +18,7 @@ body{
     background-color: rgb(255, 255, 255);
     width: 80px;
     float: left;
-    height: 800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,8 +124,8 @@ body{
 #communities{
     background-color: white;
     padding: 10px;
-    width: 65px;
-    height: 700px;
+    width: 67px;
+    height: 100vh;
     padding-left: 0;
     display: flex;
     float: left;
@@ -186,3 +187,12 @@ body{
   pointer-events: auto;
 }
 
+#posts{
+    background-color: white;
+    display: flex;
+    margin: auto;
+    width: 900px;
+    height: 100vh;
+    overflow-y: scroll;
+    
+}
